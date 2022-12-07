@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Project</title>
+    <style>
+        .container {
+            align-items: center;
+            position: relative;
+        }
+
+        .table-container {
+            margin-top: 20px;
+            height: 88vh;
+            overflow: auto;
+        }
+
+        .table-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        table {
+            text-align: center;
+            width: 50%;
+            border-collapse: collapse;
+            margin-left: 25%;
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+
+        #btn-container {
+            position: fixed;
+            bottom: 1%;
+            left: 40%;
+        }
+
+        .btn {
+            background-color: antiquewhite;
+            color: black;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 15px;
+        }
+
+        button:first-child {
+            background-color: red;
+            color: white;
+        }
+
+        button:first-child:hover {
+            background-color: white;
+            color: red;
+            border: 1px solid red;
+        }
+
+        button:last-child {
+            background-color: mediumseagreen;
+            color: white;
+        }
+
+        button:last-child:hover {
+            background-color: white;
+            color: mediumseagreen;
+            border: 1px solid mediumseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="table-container">
+            <table id="main-table">
+                <tr class="row-count">
+                    <th>SL.No.</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>City</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Chris</td>
+                    <td>Evans</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mark</td>
+                    <td>Ruffalo</td>
+                    <td>Washington DC</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Jerremy</td>
+                    <td>Runner</td>
+                    <td>Sydney</td>
+                    <td>Australia</td>
+                </tr>
+            </table>
+        </div>
+        <div id="btn-container">
+            <button id="add-at-bottom" class="btn">Add Row To Bottom</button>
+            <button id="add-at-top" class="btn">Add Row To Top</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

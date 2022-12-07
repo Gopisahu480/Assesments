@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentance Project</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .container {
+            height: 100vh;
+            background-color: rgb(112, 182, 196);
+            position: relative;
+        }
+
+        #frm {
+            height: 99vh;
+
+        }
+
+        .input-container {
+            width: 34%;
+            position: fixed;
+            top: 20%;
+            padding-top: 5%;
+            height: 50%;
+
+        }
+
+        #para-container {
+            width: 64%;
+            margin-left: 35%;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            position: fixed;
+            top: 15%;
+            height: 70%;
+            text-align: justify;
+            overflow: auto;
+        }
+
+        #para-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .btn-container {
+            position: fixed;
+            bottom: 10px;
+            left: 45%;
+        }
+
+        .btn {
+            margin: 10px;
+            height: 35px;
+            width: 80px;
+            border: none;
+        }
+
+        #reset {
+            background-color: #30050b;
+            color: white;
+        }
+
+        #submit {
+            background-color: #000000;
+            color: white;
+        }
+
+        .inp {
+            width: 80%;
+            margin-top: 3%;
+            margin-left: 3%;
+            border: none;
+            height: 35px;
+            font-size: 18px;
+            padding-left: 8px;
+            border-radius: 3px;
+        }
+
+        .txt {
+            margin-left: 3%;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        #txt2 {
+            position: relative;
+            top: 12px;
+        }
+
+        #character {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="frm">
+            <div class="input-container">
+                <label for="sentance" class="txt" id="txt1">Enter a Sentance</label><br>
+                <input type="text" name="sentance" id="sentance" class="inp" placeholder="Enter Here"><br>
+
+                <label for="character" class="txt" id="txt2">Enter a Character</label><br>
+                <input type="text" name="character" id="character" class="inp" placeholder="Enter Here">
+            </div>
+            <div id="para-container">
+                <p id="para"></p>
+            </div>
+        </form>
+        <div class="btn-container">
+            <button class="btn" id="submit">Submit</button>
+            <button class="btn" id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
